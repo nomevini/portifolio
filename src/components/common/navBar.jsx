@@ -14,7 +14,7 @@ const NavBar = (props) => {
 						<ul className="nav-list">
 							<li
 								className={
-									active === "home"
+									active === "Início"
 										? "nav-item active"
 										: "nav-item"
 								}
@@ -23,7 +23,7 @@ const NavBar = (props) => {
 							</li>
 							<li
 								className={
-									active === "about"
+									active === "sobre"
 										? "nav-item active"
 										: "nav-item"
 								}
@@ -32,7 +32,7 @@ const NavBar = (props) => {
 							</li>
 							<li
 								className={
-									active === "projects"
+									active === "projetos"
 										? "nav-item active"
 										: "nav-item"
 								}
@@ -41,16 +41,7 @@ const NavBar = (props) => {
 							</li>
 							<li
 								className={
-									active === "articles"
-										? "nav-item active"
-										: "nav-item"
-								}
-							>
-								<Link to="/articles">Artigos Publicados</Link>
-							</li>
-							<li
-								className={
-									active === "contact"
+									active === "contatos"
 										? "nav-item active"
 										: "nav-item"
 								}
