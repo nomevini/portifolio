@@ -25,6 +25,15 @@ const INFO = {
 			"Desenvolvi alguns projetos ao longo dos anos e estou orgulhoso do progresso que fiz. Muitos desses projetos são de código aberto e estão disponíveis para outros explorarem e contribuírem. Sinta-se à vontade para verificar o código e sugerir quaisquer melhorias ou aprimoramentos que possa ter em mente.",
 	},
 
+	logoLanguages: {
+		javascript: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+		python: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+		postgre: "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
+		tailwindCSS: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+		html: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/html/html.png",
+		nodejs: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
+	},
+
 	articles: {
 		title: "Se eu vi mais longe, foi por estar sobre ombros de gigantes.",
 		description:

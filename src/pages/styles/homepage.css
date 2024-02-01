@@ -71,6 +71,17 @@
 	color: var(--primary-color);
 }
 
+.homepage-language-icon {
+	display: flex;
+	height: 40px;
+	margin-top: 20px;
+}
+
+.homepage-language-icon img {
+	width: 40px;
+	margin: 0 10px 0 0;
+}
+
 .homepage-after-title {
 	display: flex;
 }

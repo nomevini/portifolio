@@ -91,6 +91,15 @@ const Homepage = () => {
 									{INFO.homepage.title}
 								</div>
 
+								<div className="homepage-language-icon">
+										<img src={INFO.logoLanguages.javascript} alt="javascript logo"/>
+										<img src={INFO.logoLanguages.nodejs} alt="Node.js Logo" />
+										<img src={INFO.logoLanguages.python} alt="python logo"/>
+										<img src={INFO.logoLanguages.postgre} alt="postgre logo"/>
+										<img src={INFO.logoLanguages.tailwindCSS} alt="tailwindCSS logo"/>
+										<img src={INFO.logoLanguages.html} alt="html logo"/>
+								</div>
+
 								<div className="subtitle homepage-subtitle">
 									{INFO.homepage.description}
 								</div>
