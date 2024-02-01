@@ -37,14 +37,16 @@
 }
 
 .homepage-image-container {
-	width: 300px;
-	height: 300px;
+	width: 370px;
+	height: 370px;
 }
 
 .homepage-image-wrapper {
 	overflow: hidden;
 	border-radius: 10%;
 	transform: rotate(3deg);
+
+	height: 350px;
 }
 
 .homepage-image-wrapper img {
@@ -69,16 +71,6 @@
 	color: var(--primary-color);
 }
 
-.homepage-language-icon {
-	display: flex;
-	height: 40px;
-}
-
-.homepage-language-icon img {
-	width: 40px;
-	margin: 0 10px 0 10px;
-}
-
 .homepage-after-title {
 	display: flex;
 }
@@ -99,7 +91,7 @@
 }
 
 .homepage-works {
-	flex-basis: 100%;
+	flex-basis: 600px;
 	padding-top: 30px;
 }
 

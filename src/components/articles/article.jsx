@@ -15,7 +15,7 @@ const Article = (props) => {
 					<div className="article-date">{date}</div>
 				</div>
 
-				<Link to={link}>
+				<Link to={link} target="_blank">
 					<div className="article-right-side">
 						<div className="article-title">{title}</div>
 						<div className="article-description">{description}</div>

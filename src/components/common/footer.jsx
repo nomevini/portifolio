@@ -19,6 +19,9 @@ const Footer = () => {
 							<Link to="/projects">Projetos</Link>
 						</li>
 						<li className="footer-nav-link-item">
+							<Link to="/articles">Artigos</Link>
+						</li>
+						<li className="footer-nav-link-item">
 							<Link to="/contact">Contato</Link>
 						</li>
 					</ul>
@@ -26,7 +29,7 @@ const Footer = () => {
 
 				<div className="footer-credits">
 					<div className="footer-credits-text">
-						© 2023 nomevini.dev. Todos os direitos reservados.
+						© 2024 Nomevini. Todos os direitos reservados.
 					</div>
 				</div>
 			</div>
