@@ -126,6 +126,10 @@
 		order: 2;
 	}
 
+	.title.homepage-title {
+		font-size: 20pt;
+	}
+
 	.homepage-subtitle {
 		width: 100% !important;
 		margin-top: 10px;
@@ -142,6 +146,10 @@
 		padding-bottom: 50px;
 		margin-left: 10px;
 		order: 1;
+	}
+	
+	img.homepage-image {
+		width: 100%;
 	}
 
 	.homepage-after-title {
