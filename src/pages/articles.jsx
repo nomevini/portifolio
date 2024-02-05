@@ -33,11 +33,6 @@ const Articles = () => {
 			<div className="page-content">
 				<NavBar active="articles" />
 				<div className="content-wrapper">
-					<div className="articles-logo-container">
-						<div className="articles-logo">
-							<Logo width={46} />
-						</div>
-					</div>
 
 					<div className="articles-main-container">
 						<div className="title articles-title">
