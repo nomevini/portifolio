@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Vinícius Carvalho</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://rjshkhr.github.io/cleanfolio-minimal" class="link"
+          >VC.</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Olá, Eu sou <span class="about__name">Vinícius Carvalho.</span></h1>
+        <h2 class="about__role">Desenvolvedor Backend.</h2>
+        <p class="about__desc">
+          Sou desenvolvedor backend com experiência em Node.js. 
+          Tenho experiência na construção de aplicações web escaláveis, 
+          seguras e confiáveis ​​usando vários frameworks e tecnologias. 
+          Também realizo pesquisas na área de Visão Computacional e 
+          aprendizado de máquina. Gosto de resolver problemas complexos e 
+          aprender novas habilidades. Sou apaixonado por criar código de alta 
+          qualidade que segue as melhores práticas e padrões do setor. 
+          Estou sempre em busca de novos desafios e oportunidades para crescer 
+          como desenvolvedor.
+        </p>
+
+        <div class="about__contact center">
+          <a href="#">
+            <span class="btn btn--outline">Currículo</span>
+          </a>
+
+          <a
+            href="https://github.com/nomevini"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/nomevini"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain"><img src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/typescript/typescript_128x128.png" alt="typescript logo"></li>
+          <li class="skills__list-item btn btn--plain"><img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png" alt="javascript logo"></li>
+          <li class="skills__list-item btn btn--plain"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="html logo"></li>
+          <li class="skills__list-item btn btn--plain"><img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="postgresql logo"></li>
+          <li class="skills__list-item btn btn--plain"><img src="https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png" alt="python logo"></li>
+          <li class="skills__list-item btn btn--plain"><img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/anaconda/anaconda-original.svg" alt="Anaconda logo"></li>
+          <li class="skills__list-item btn btn--plain"><img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/html5/html5-original.svg" alt="html logo"></li>
+          <li class="skills__list-item btn btn--plain"><img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/css3/css3-original.svg" alt="CSS logo"></li>
+          <li class="skills__list-item btn btn--plain"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"," alt="tailwind logo"></li>
+          <li class="skills__list-item btn btn--plain"><img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/git/git-original.svg" alt="git logo"></li>
+        </ul>
+      </section>
+
+            <!-- Projects -->
+            <section id="projects" class="section projects">
+              <h2 class="section__title">Projetos</h2>
+      
+              <div class="projects__grid">
+                <div class="project">
+                  <h3>MeConta</h3>
+                  <p class="project__description">
+                    MeConta é um sistema de gestão de finanças pessoais desenvolvido com HTML, 
+                    CSS, JavaScript, Node.js, Express.js e Sequelize. Ele oferece uma interface 
+                    intuitiva para ajudar os usuários a controlar despesas e receitas, promovendo 
+                    uma administração financeira organizada e simplificada.
+                  </p>
+                  <ul class="project__stack">
+                    <li class="project__stack-item">HTML</li>
+                    <li class="project__stack-item">CSS</li>
+                    <li class="project__stack-item">Javascript</li>
+                    <li class="project__stack-item">NodeJs</li>
+                    <li class="project__stack-item">PostgreSQL</li>
+                    <li class="project__stack-item">Sequelize</li>
+                  </ul>
+      
+                  <a
+                    href="https://github.com/me-conta/MeConta"
+                    aria-label="source code"
+                    class="link link--icon"
+                  >
+                    <i aria-hidden="true" class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="#"
+                    aria-label="live preview"
+                    class="link link--icon"
+                  >
+                    <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+      
+                <div class="project">
+                  <h3>MontionDetective</h3>
+                  <p class="project__description">
+                    MontionDetective é uma aplicação de visão computacional que utiliza Python, 
+                    PyQT5 e o modelo YOLOv8 para detectar e rastrear pessoas em vídeos. 
+                    É uma ferramenta eficiente para segurança e monitoramento em tempo real.
+                  </p>
+                  <ul class="project__stack">
+                    <li class="project__stack-item">Python</li>
+                    <li class="project__stack-item">PyQT5</li>
+                    <li class="project__stack-item">YOLOv8</li>
+                  </ul>
+      
+                  <a
+                    href="https://github.com/nomevini/montion-detective"
+                    aria-label="source code"
+                    class="link link--icon"
+                  >
+                    <i aria-hidden="true" class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://montiondetective.vercel.app/"
+                    aria-label="live preview"
+                    class="link link--icon"
+                  >
+                    <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+      
+                <div class="project">
+                  <h3>Notion Minhas Finanças</h3>
+                  <p class="project__description">
+                    Notion Minhas Finanças é uma página de vendas para um template
+                    Notion de finanças pessoas, que ajuda você a gerenciar suas receitas e despesas. 
+                    A página é totalmente responsiva e desenvolvida em HTML, CSS e Javascript
+                  </p>
+                  <ul class="project__stack">
+                    <li class="project__stack-item">HTML</li>
+                    <li class="project__stack-item">CSS</li>
+                    <li class="project__stack-item">JavaScript</li>
+                  </ul>
+      
+                  <a
+                    href="https://github.com/nomevini/Minhas-Financas"
+                    aria-label="source code"
+                    class="link link--icon"
+                  >
+                    <i aria-hidden="true" class="fab fa-github"></i>
+                  </a>
+                  <a
+                    href="https://nomevini.vercel.app/"
+                    aria-label="live preview"
+                    class="link link--icon"
+                  >
+                    <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+
+              </div>
+            </section>
+      
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contato</h2>
+        <div class="contacts">
+          <a href="mailto:sousav387@gmail.com">
+            <span class="btn btn--outline">Email</span>
+          </a>
+  
+          <a href="mailto:sousav387@gmail.com">
+            <span class="btn btn--outline">LinkedIn</span>
+          </a>
+
+          <a href="mailto:sousav387@gmail.com">
+            <span class="btn btn--outline">Instagram</span>
+          </a>
+        </div>
+        
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a target="_blank"
+        href="https://github.com/nomevini"
+        class="link footer__link"
+      >
+        Criado por nomevini
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
