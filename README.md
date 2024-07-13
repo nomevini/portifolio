@@ -1,13 +1,5 @@
-# Cleanfolio Minimal
+# Meu Portfólio Pessoal
+Bem-vindo ao repositório do meu portfólio pessoal! Este site apresenta meus projetos, habilidades e experiências. Sinta-se à vontade para explorar e conhecer mais sobre o meu trabalho.
 
-A portfolio template built with HTML, CSS, and JavaScript.
-
-## Preview
-
-[![imgur](https://i.imgur.com/5z7cvMz.gif)](https://rjshkhr.github.io/cleanfolio-minimal)
-
-[Live Demo](https://rjshkhr.github.io/cleanfolio-minimal)
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+# Demonstração
+Você pode acessar a versão ao vivo do meu portfólio [aqui](https://viniciuscarvalho.vercel.app/).
