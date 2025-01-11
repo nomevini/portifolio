@@ -403,9 +403,37 @@ main {
   transition: transform 0.2s ease-in-out;
 }
 
+.formation-iten-wrapper {
+
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.formation-iten-wrapper img {
+  max-width:120px;
+  height: auto;
+  margin-top: 1.2em;  
+}
+
+.formation-iten {
+  max-width: 800px;
+  margin-left: 10px;
+}
+.formation-iten p {
+  text-align: justify;
+}
+
 @media (max-width: 600px) {
   .header {
     height: 6em;
+  }
+
+  .formation-iten-wrapper{
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .section {
@@ -439,7 +467,7 @@ main {
   }
 
   .about {
-    align-items: flex-start;
+    /* align-items: flex-start; */
     margin-top: 2em;
   }
 
