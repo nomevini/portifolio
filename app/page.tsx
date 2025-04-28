@@ -8,10 +8,10 @@ import Image from "next/image"
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-background w-full flex flex-col justify-center items-center">
-      <header className="flex justify-center sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-14 w-full items-center">
-          <div className="mr-4 hidden md:flex w-full">
+    <div className="min-h-screen bg-background">
+      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container flex h-14 items-center">
+          <div className="mr-4 hidden md:flex">
             <Link className="mr-6 flex items-center space-x-2" href="/">
               <span className="hidden font-bold sm:inline-block">John.dev</span>
             </Link>
@@ -33,7 +33,7 @@ export default function Page() {
         </div>
       </header>
 
-      <main className="container px-4 md:px-6 flex flex-col justify-center">
+      <main className="container px-4 md:px-6">
         <section id="about" className="py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
