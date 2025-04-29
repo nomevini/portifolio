@@ -8,22 +8,22 @@ import Image from "next/image"
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-background">
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-14 items-center">
+    <div className="min-h-screen bg-background flex flex-col justify-center items-center">
+      <header className="flex items-center justify-center sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container flex h-14 items-center justify-center">
           <div className="mr-4 hidden md:flex">
             <Link className="mr-6 flex items-center space-x-2" href="/">
-              <span className="hidden font-bold sm:inline-block">John.dev</span>
+              <span className="hidden font-bold sm:inline-block">nomevini</span>
             </Link>
             <nav className="flex items-center space-x-6 text-sm font-medium">
               <Link href="#about" className="transition-colors hover:text-foreground/80">
-                About
+                Sobre
               </Link>
               <Link href="#projects" className="transition-colors hover:text-foreground/80">
-                Projects
+                Projetos
               </Link>
               <Link href="#contact" className="transition-colors hover:text-foreground/80">
-                Contact
+                Contato
               </Link>
             </nav>
           </div>
@@ -46,6 +46,9 @@ export default function Page() {
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                   Full Stack Developer
                 </h1>
+                <h2 className="text-2xl tracking-tighter sm:text-2xl md:text-3xl lg:text-4xl/none">
+                  Desenvolvedor Full-Stack
+                </h2>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                   Building digital experiences with modern technologies. Focused on creating elegant solutions to
                   complex problems.
@@ -83,7 +86,7 @@ export default function Page() {
 
         <section id="projects" className="py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Projects</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Projetos</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
                 title="E-commerce Platform"
@@ -116,7 +119,7 @@ export default function Page() {
         <section className="py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
-              Tech Stack
+              Habilidades
             </h2>
             <TechStack />
           </div>
@@ -126,7 +129,7 @@ export default function Page() {
           <div className="container px-4 md:px-6">
             <div className="mx-auto max-w-2xl">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
-                Get in Touch
+                Entre em contato
               </h2>
               <ContactForm />
             </div>
