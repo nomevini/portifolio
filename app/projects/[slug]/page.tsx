@@ -198,7 +198,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <div className="container max-w-4xl py-12">
+    <div className="container w-full py-12 ">
       <div className="mb-8">
         <Link
           href="/#projects"
@@ -244,7 +244,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
               return (
                 <figure key={index} className="my-8">
                   <div className="relative aspect-video w-full overflow-hidden rounded-lg">
-                    <Image src={block.src || "/placeholder.svg"} alt={block.alt} fill className="object-cover" />
+                    <Image src={block.src || "/placeholder.svg"} alt={block.alt || "Image description"} fill className="object-cover" />
                   </div>
                   {block.caption && (
                     <figcaption className="text-center text-sm text-muted-foreground mt-2">{block.caption}</figcaption>

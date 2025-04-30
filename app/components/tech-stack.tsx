@@ -3,11 +3,11 @@ import { Card } from "@/components/ui/card"
 const technologies = [
   {
     category: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "TailwindCSS", "Redux", "GraphQL"],
+    skills: ["React", "Next.js", "TypeScript", "TailwindCSS", "CSS"],
   },
   {
     category: "Backend",
-    skills: ["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB"],
+    skills: ["Node.js", "Express", "Fastify", "Python", "Prisma", "PostgreSQL", "YOLO", "Retrieval-Augmented Generation (RAG)", "Hugging Face Transformers", "Langchain", "FAISS", "SentenceTransformers"],
   },
   {
     category: "DevOps",

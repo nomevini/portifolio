@@ -1,37 +1,15 @@
 import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail, Twitter } from "lucide-react"
 import Link from "next/link"
-import ContactForm from "./components/contact-form"
 import ProjectCard from "./components/project-card"
 import TechStack from "./components/tech-stack"
 import Image from "next/image"
+import ExperienceItem from "@/components/experience-item"
 
 export default function Page() {
   return (
     <div className="min-h-screen bg-background flex flex-col justify-center items-center">
-      <header className="flex items-center justify-center sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-14 items-center justify-center">
-          <div className="mr-4 hidden md:flex">
-            <Link className="mr-6 flex items-center space-x-2" href="/">
-              <span className="hidden font-bold sm:inline-block">nomevini</span>
-            </Link>
-            <nav className="flex items-center space-x-6 text-sm font-medium">
-              <Link href="#about" className="transition-colors hover:text-foreground/80">
-                Sobre
-              </Link>
-              <Link href="#projects" className="transition-colors hover:text-foreground/80">
-                Projetos
-              </Link>
-              <Link href="#contact" className="transition-colors hover:text-foreground/80">
-                Contato
-              </Link>
-            </nav>
-          </div>
-          <Button variant="outline" className="ml-auto">
-            Resume
-          </Button>
-        </div>
-      </header>
+      
 
       <main className="container px-4 md:px-6">
         <section id="about" className="py-12 md:py-24 lg:py-32">
@@ -47,33 +25,27 @@ export default function Page() {
                   Full Stack Developer
                 </h1>
                 <h2 className="text-2xl tracking-tighter sm:text-2xl md:text-3xl lg:text-4xl/none">
-                  Desenvolvedor Full-Stack
+                  Desenvolvedor Full-Stack | Visão computacional | LLMs
                 </h2>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Building digital experiences with modern technologies. Focused on creating elegant solutions to
-                  complex problems.
+                Desenvolvedor Full Stack especializado em criar aplicações web modernas, escaláveis e focadas na melhor experiência do usuário.
                 </p>
               </div>
               <div className="space-x-4">
-                <Link href="https://github.com" target="_blank">
+                <Link href="https://github.com/nomevini" target="_blank">
                   <Button variant="outline" size="icon">
                     <Github className="h-4 w-4" />
                     <span className="sr-only">GitHub</span>
                   </Button>
                 </Link>
-                <Link href="https://linkedin.com" target="_blank">
+                <Link href="https://www.linkedin.com/in/nomevini/" target="_blank">
                   <Button variant="outline" size="icon">
                     <Linkedin className="h-4 w-4" />
                     <span className="sr-only">LinkedIn</span>
                   </Button>
                 </Link>
-                <Link href="https://twitter.com" target="_blank">
-                  <Button variant="outline" size="icon">
-                    <Twitter className="h-4 w-4" />
-                    <span className="sr-only">Twitter</span>
-                  </Button>
-                </Link>
-                <Link href="mailto:hello@example.com">
+
+                <Link href="mailto:sousav387@gmail.com">
                   <Button variant="outline" size="icon">
                     <Mail className="h-4 w-4" />
                     <span className="sr-only">Email</span>
@@ -84,9 +56,49 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="projects" className="py-12 md:py-24 lg:py-32">
+        <section className="py-12 md:py-15 lg:py-10">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Projetos</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
+            🛠️  Habilidades
+            </h2>
+            <TechStack />
+          </div>
+        </section>
+
+        <section id="experience" className="py-12 md:py-15 lg:py-10">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
+            💼 Experiência
+            </h2>
+            <div className="max-w-3xl mx-auto">
+              <ExperienceItem
+                title="Senior Full Stack Developer"
+                company="BRNX Tecnologia"
+                period="nov 2024 - Presente"
+                description="Liderando o desenvolvimento de aplicações web escaláveis, implementando arquiteturas modernas. Responsável pelo desenvolvimento de sistemas internos e automação de processos internos."
+                technologies={["React", "Node.js", "TypeScript", "AWS", "PostgreSQL"]}
+              />
+              <ExperienceItem
+                title="Pesquisador em IA Generativa"
+                company="UFPI"
+                period="Set 2024 - Abr 2025"
+                description="Desenvolvimento de modelo de LLm especializado em anetesia baseado em técnica de RAG (Retrieval-Augmented Generation) em banco de dados vetorial para aprimoramento de respostas de modelos OpenSource. Criação de interface e funcionalidade da aplicação para estudos diversos em anestesia."
+                technologies={["React", "Fastify", "PostgreSQL", "Docker", "RAG", "Hugging Face Transformers", "FAISS", "Langchain"]}
+              />
+              <ExperienceItem
+                title="Pesquisador em Visão e Inteligência Computacional"
+                company="UFPI/CNPQ"
+                period="Set 2022 - Set 2024"
+                description="Desenvolvimento de uma ferramenta para contagem e rastreamento de pessoas em vídeos."
+                technologies={["YOLO", "PyQt5", "Python", "Ultralytics"]}
+              />
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" className="py-5 md:py-15 lg:py-10">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">🚀 Projetos</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
                 title="E-commerce Platform"
@@ -116,40 +128,13 @@ export default function Page() {
           </div>
         </section>
 
-        <section className="py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
-              Habilidades
-            </h2>
-            <TechStack />
-          </div>
-        </section>
 
-        <section id="contact" className="py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="mx-auto max-w-2xl">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
-                Entre em contato
-              </h2>
-              <ContactForm />
-            </div>
-          </div>
-        </section>
+
+
+
       </main>
 
-      <footer className="border-t">
-        <div className="container flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6">
-          <p className="text-xs text-gray-500 dark:text-gray-400">© 2024 John.dev. All rights reserved.</p>
-          <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-            <Link className="text-xs hover:underline underline-offset-4" href="#">
-              Terms of Service
-            </Link>
-            <Link className="text-xs hover:underline underline-offset-4" href="#">
-              Privacy
-            </Link>
-          </nav>
-        </div>
-      </footer>
+
     </div>
   )
 }
