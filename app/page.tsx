@@ -18,7 +18,7 @@ export default function Page() {
               <div className="space-y-2">
                 <div className="mb-6">
                   <div className="relative w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-primary">
-                    <Image src="/vinicius.png" alt="Profile picture" fill className="object-cover" />
+                    <Image src="/vinicius.jpeg" alt="Profile picture" fill className="object-cover" />
                   </div>
                 </div>
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
