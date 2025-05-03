@@ -18,7 +18,7 @@ export default function Page() {
               <div className="space-y-2">
                 <div className="mb-6">
                   <div className="relative w-32 h-32 mx-auto rounded-full overflow-hidden border-4 border-primary">
-                    <Image src="/confident-professional.png" alt="Profile picture" fill className="object-cover" />
+                    <Image src="/vinicius.png" alt="Profile picture" fill className="object-cover" />
                   </div>
                 </div>
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
@@ -72,7 +72,7 @@ export default function Page() {
             </h2>
             <div className="max-w-3xl mx-auto">
               <ExperienceItem
-                title="Senior Full Stack Developer"
+                title="Desenvolvedor FullStack Junior"
                 company="BRNX Tecnologia"
                 period="nov 2024 - Presente"
                 description="Liderando o desenvolvimento de aplicações web escaláveis, implementando arquiteturas modernas. Responsável pelo desenvolvimento de sistemas internos e automação de processos internos."
@@ -101,20 +101,20 @@ export default function Page() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">🚀 Projetos</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
-                title="E-commerce Platform"
-                description="A full-stack e-commerce platform built with Next.js, Prisma, and Stripe integration."
-                image="/digital-marketplace.png"
-                link="https://github.com"
-                tags={["Next.js", "Prisma", "Stripe"]}
-                slug="ecommerce-platform"
+                title="Anest.AI"
+                description="anest.ai é uma plataforma de estudo de anestesiologia que une conteúdo técnico (livros e questões) com uma IA especializada. Utiliza técnicas de RAG com o modelo LLaMA 70B e um banco vetorial com mais de 20 mil trechos de livros, permitindo respostas precisas e fundamentadas em conteúdo médico real."
+                image="/anest-ai.png"
+                link=""
+                tags={["Next.js", "Node.js", "Socket.io", "Assistant-ai", "RAG", "Python", "Langchain", "Tailwind", "Fastify", "Prisma"]}
+                slug="anest-ai"
               />
               <ProjectCard
-                title="Task Management App"
-                description="A real-time task management application with team collaboration features."
-                image="/digital-taskboard.png"
-                link="https://github.com"
-                tags={["React", "Node.js", "Socket.io"]}
-                slug="task-management-app"
+                title="Dafa Safe - Plataforma de acesso a dados (Web Scraping)"
+                description="Sistema web para upload e processamento de planilhas .csv com mais de 100.000 CPFs. Utiliza Selenium para web scraping automatizado e exporta os dados enriquecidos em novos arquivos .csv. Desenvolvido com Next.js, Express, Prisma e Selenium."
+                image="/data-safe.png"
+                link="https://github.com/nomevini/data-safe-consig"
+                tags={["Next.js", "Prisma", "PostgreSQL", "Selenium", "Typescript", "Express.js"]}
+                slug="data-safe"
               />
               <ProjectCard
                 title="AI Chat Interface"

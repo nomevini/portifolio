@@ -7,127 +7,137 @@ import { notFound } from "next/navigation"
 // Sample project data - in a real app, this would come from a database or CMS
 const projects = [
   {
-    slug: "ecommerce-platform",
-    title: "E-commerce Platform",
+    slug: "data-safe",
+    title: "Dafa Safe - Plataforma de acesso a dados (Web Scraping)",
     description: "A full-stack e-commerce platform built with Next.js, Prisma, and Stripe integration.",
-    image: "/digital-marketplace.png",
-    link: "https://github.com",
+    image: "/data-safe.png",
+    link: "https://github.com/nomevini/data-safe-consig",
     tags: ["Next.js", "Prisma", "Stripe"],
     content: [
       {
         type: "paragraph",
         content:
-          "This e-commerce platform was built to provide a seamless shopping experience with modern technologies. The project focuses on performance, user experience, and scalability.",
+          "O Data Safe é uma plataforma desenvolvida para automatizar o carregamento e o processamento em massa de planilhas contendo dados sensíveis, como CPFs. O foco do projeto está na performance, automação e escalabilidade no tratamento de grandes volumes de dados.",
       },
       {
         type: "heading",
-        content: "Project Goals",
+        content: "Objetivos do Projeto",
       },
       {
         type: "paragraph",
         content:
-          "The main goal was to create a platform that could handle thousands of products while maintaining fast load times and a smooth user experience. We also wanted to ensure that the checkout process was as frictionless as possible.",
+          "O principal objetivo foi criar uma aplicação capaz de processar mais de 100.000 CPFs de forma automatizada, com extração de dados via web scraping. Também buscamos oferecer uma interface simples para upload e download de planilhas, garantindo estabilidade e rapidez em todo o processo.",
       },
-      {
-        type: "image",
-        src: "/placeholder.svg?height=400&width=800&query=e-commerce dashboard",
-        alt: "E-commerce Dashboard",
-        caption: "Admin dashboard showing sales analytics",
-      },
+      
       {
         type: "heading",
-        content: "Technical Implementation",
+        content: "Implementação Técnica",
       },
       {
         type: "paragraph",
         content:
-          "The platform was built using Next.js for the frontend, with server components for improved performance. We used Prisma as our ORM to interact with a PostgreSQL database, which stores product information, user data, and order history.",
+          "O frontend foi desenvolvido com Vite, proporcionando uma experiência leve e rápida para o usuário. No backend, utilizamos Express.js para as rotas da API, Prisma como ORM para interagir com o banco de dados, e Selenium para automação do scraping em sites externos.",
       },
       {
         type: "paragraph",
         content:
-          "For payment processing, we integrated with Stripe to handle secure transactions. This allowed us to implement features like saved payment methods, subscription billing, and instant payouts to sellers.",
+          "A aplicação permite o upload de arquivos CSV, realiza o processamento dos dados com Selenium e disponibiliza o resultado final também em CSV, pronto para ser baixado pelo usuário.",
       },
       {
-        type: "image",
-        src: "/placeholder.svg?height=400&width=800&query=e-commerce product page",
-        alt: "Product Page",
-        caption: "Product detail page with dynamic pricing and inventory",
+        type: "paragraph",
+        content:
+          "Para garantir alta performance no processamento em lote, implementamos **multithreading**, permitindo que múltiplas instâncias do Selenium rodem em paralelo. Isso otimizou significativamente o tempo total de processamento dos dados.",
       },
+      
       {
         type: "heading",
-        content: "Challenges and Solutions",
+        content: "Desafios e Soluções",
       },
       {
         type: "paragraph",
         content:
-          "One of the biggest challenges was optimizing image loading for product galleries. We implemented a custom image component with lazy loading and progressive enhancement to ensure fast page loads even with hundreds of product images.",
+          "Um dos principais desafios foi garantir a estabilidade e a performance durante o scraping em lote. Implementamos controle de sessões, delays configuráveis e execução paralela com multithreading para evitar bloqueios e garantir a integridade dos dados.",
       },
       {
         type: "paragraph",
         content:
-          "Another challenge was handling cart synchronization across devices. We solved this by implementing a hybrid approach that uses local storage for guest users and database synchronization for logged-in users.",
+          "Também foi necessário otimizar a manipulação de arquivos grandes. Para isso, utilizamos streams no backend e validações em tempo real durante o upload, assegurando a integridade dos dados antes do processamento.",
       },
-    ],
+    ],    
   },
   {
-    slug: "task-management-app",
-    title: "Task Management App",
-    description: "A real-time task management application with team collaboration features.",
-    image: "/digital-taskboard.png",
-    link: "https://github.com",
-    tags: ["React", "Node.js", "Socket.io"],
+    slug: "anest-ai",
+    title: "Anest.ai",
+    description: "anest.ai é uma plataforma de estudo de anestesiologia que une conteúdo técnico (livros e questões) com uma IA especializada. Utiliza técnicas de RAG com o modelo LLaMA 70B e um banco vetorial com mais de 20 mil trechos de livros, permitindo respostas precisas e fundamentadas em conteúdo médico real.",
+    image: "/anest-ai.png",
+    link: "",
+    tags: ["Next.js", "Node.js", "Socket.io", "Assistant-ai", "RAG", "Python", "Langchain", "Tailwind", "Fastify", "Prisma"],
     content: [
       {
         type: "paragraph",
         content:
-          "This task management application was designed to help teams collaborate effectively on projects. With real-time updates and intuitive interfaces, it streamlines workflow and improves productivity.",
+          "O anest.ai é uma plataforma de estudos desenvolvida especialmente para profissionais e estudantes da área de anestesiologia. Ela combina materiais técnicos de alta qualidade com uma inteligência artificial especializada que responde dúvidas com precisão clínica.",
       },
       {
         type: "heading",
-        content: "Key Features",
+        content: "Funcionalidades Principais",
       },
       {
         type: "paragraph",
         content:
-          "The application includes features like drag-and-drop task organization, real-time collaboration, automated notifications, and detailed progress tracking.",
+          "A plataforma oferece acesso a uma biblioteca digital com livros de anestesia, materiais complementares, além de um sistema de resolução de questões e um assistente inteligente baseado em IA. Os usuários podem estudar, revisar conteúdos e testar seus conhecimentos diretamente na plataforma.",
       },
       {
         type: "image",
-        src: "/placeholder.svg?height=400&width=800&query=kanban board",
-        alt: "Kanban Board",
-        caption: "Kanban board view with drag-and-drop functionality",
+        src: "/anest-book.png",
+        alt: "Biblioteca de livros de anestesia",
+        caption: "Interface da biblioteca com materiais técnicos e livros atualizados",
       },
       {
         type: "heading",
-        content: "Technical Stack",
+        content: "Arquitetura Técnica",
       },
       {
         type: "paragraph",
         content:
-          "The frontend was built with React and uses a custom state management solution for optimal performance. The backend runs on Node.js with Express, and we used Socket.io to enable real-time updates across all connected clients.",
+          "A plataforma utiliza um modelo LLM avançado, o LLaMA 2 com 70 bilhões de parâmetros, para responder dúvidas em linguagem natural. Ele é integrado a uma arquitetura de RAG (Retrieval-Augmented Generation), que busca e fornece contexto diretamente de um banco vetorial baseado em mais de 20 mil trechos (chunks) extraídos de livros de anestesia.",
       },
       {
         type: "paragraph",
         content:
-          "For data persistence, we chose MongoDB due to its flexibility with document structures, which allowed us to easily adapt to changing requirements during development.",
+          "A base vetorial permite que a IA localize exatamente os trechos mais relevantes dos materiais de estudo antes de formular uma resposta, garantindo precisão e confiabilidade nas interações. Essa técnica transforma a IA em uma assistente de estudos confiável e útil para casos clínicos e revisões teóricas.",
       },
       {
         type: "image",
-        src: "/placeholder.svg?height=400&width=800&query=task detail view",
-        alt: "Task Detail View",
-        caption: "Detailed task view with comments and activity log",
+        src: "/anest-chat.png",
+        alt: "Resposta da IA com base em RAG",
+        caption: "IA especializada respondendo com base nos livros da base vetorial",
       },
       {
         type: "heading",
-        content: "User Research and Iteration",
+        content: "Desenvolvimento e Tecnologias",
       },
       {
         type: "paragraph",
         content:
-          "We conducted extensive user research before and during development, which led to several iterations of the interface. This user-centered approach helped us create an intuitive experience that required minimal onboarding.",
+          "A interface da plataforma foi construída com foco em simplicidade e usabilidade. O frontend oferece acesso rápido ao conteúdo e navegação fluida. O backend gerencia as interações com o banco vetorial e a orquestração entre o sistema de busca e o modelo de linguagem.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "O sistema RAG foi implementado com um pipeline de chunking inteligente, indexação vetorial eficiente e consultas otimizadas para garantir que o modelo LLaMA receba apenas os trechos mais relevantes como contexto. A IA responde de forma rápida, clara e embasada em material técnico.",
+      },
+      {
+        type: "heading",
+        content: "Pesquisa com Usuários e Iterações",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Durante o desenvolvimento, foram conduzidas entrevistas com anestesistas, residentes e estudantes da área para entender suas dores e necessidades. Com base nesse feedback, a interface e as funcionalidades foram ajustadas para criar uma experiência intuitiva e realmente útil no dia a dia de quem estuda ou atua com anestesia.",
       },
     ],
+    
   },
   {
     slug: "ai-chat-interface",
@@ -205,7 +215,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground"
         >
           <ArrowLeft className="mr-2 h-4 w-4" />
-          Back to all projects
+          Voltar para todos os projetos
         </Link>
       </div>
 
@@ -260,7 +270,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
           <Link href={project.link} target="_blank">
             <Button className="inline-flex items-center gap-2">
               <Github className="h-4 w-4" />
-              View Project on GitHub
+              Veja o projeto no GitHub
             </Button>
           </Link>
         </div>
