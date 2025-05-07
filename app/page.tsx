@@ -116,14 +116,7 @@ export default function Page() {
                 tags={["Next.js", "Prisma", "PostgreSQL", "Selenium", "Typescript", "Express.js"]}
                 slug="data-safe"
               />
-              <ProjectCard
-                title="AI Chat Interface"
-                description="An AI-powered chat interface with natural language processing capabilities."
-                image="/modern-ai-interaction.png"
-                link="https://github.com"
-                tags={["OpenAI", "Next.js", "TailwindCSS"]}
-                slug="ai-chat-interface"
-              />
+              
             </div>
           </div>
         </section>
