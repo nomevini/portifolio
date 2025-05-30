@@ -76,13 +76,13 @@ export default function Page() {
                 company="BRNX Tecnologia"
                 period="nov 2024 - Presente"
                 description="Liderando o desenvolvimento de aplicações web escaláveis, implementando arquiteturas modernas. Responsável pelo desenvolvimento de sistemas internos e automação de processos internos."
-                technologies={["React", "Node.js", "TypeScript", "AWS", "PostgreSQL"]}
+                technologies={["React", "Node.js", "TypeScript", "AWS", "PostgreSQL", "LLMs", "n8n"]}
               />
               <ExperienceItem
                 title="Pesquisador em IA Generativa"
                 company="UFPI"
                 period="Set 2024 - Abr 2025"
-                description="Desenvolvimento de modelo de LLm especializado em anetesia baseado em técnica de RAG (Retrieval-Augmented Generation) em banco de dados vetorial para aprimoramento de respostas de modelos OpenSource. Criação de interface e funcionalidade da aplicação para estudos diversos em anestesia."
+                description="Desenvolvimento de modelo de LLM especializado em anetesia baseado em técnica de RAG (Retrieval-Augmented Generation) em banco de dados vetorial para aprimoramento de respostas de modelos OpenSource. Criação de interface e funcionalidade da aplicação para estudos diversos em anestesia."
                 technologies={["React", "Fastify", "PostgreSQL", "Docker", "RAG", "Hugging Face Transformers", "FAISS", "Langchain"]}
               />
               <ExperienceItem
@@ -120,13 +120,7 @@ export default function Page() {
             </div>
           </div>
         </section>
-
-
-
-
-
       </main>
-
 
     </div>
   )

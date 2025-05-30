@@ -15,7 +15,7 @@ const technologies = [
   },
   {
     category: "Tools",
-    skills: ["VS Code", "Postman", "Figma", "Jest", "GitHub", "Vercel"],
+    skills: ["VS Code", "Postman", "Figma", "Jest", "GitHub", "Vercel", "n8n"],
   },
 ]
 
