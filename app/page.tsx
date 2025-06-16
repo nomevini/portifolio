@@ -101,6 +101,14 @@ export default function Page() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">🚀 Projetos de destaque</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
+                title="Agente AI - N8N (Privado)"
+                description="Workflow no N8N que permite executar comandos de administração de redes de computadores via WhatsApp."
+                image="/agent.png"
+                link=""
+                tags={["N8N", "WhatsApp API", "Automação de Redes", "SSH", "Low-code", "LangChain", "Python","Next.js", "Prisma", "PostgreSQL", "Typescript"]}
+                slug="agent"
+              />
+              <ProjectCard
                 title="Anest.AI"
                 description="anest.ai é uma plataforma de estudo de anestesiologia que une conteúdo técnico (livros e questões) com uma IA especializada. Utiliza técnicas de RAG com o modelo LLaMA 70B e um banco vetorial com mais de 20 mil trechos de livros, permitindo respostas precisas e fundamentadas em conteúdo médico real."
                 image="/anest-ai.png"

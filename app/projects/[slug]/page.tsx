@@ -8,7 +8,7 @@ import { notFound } from "next/navigation"
 const projects = [
   {
     "slug": "agent",
-    "title": "AI-Agent-N8N - Agente WhatsApp para Operações de Redes",
+    "title": "AI-Agent-N8N - Agente WhatsApp para Operações de Redes (Acesso privado)",
     "description": "Workflow no N8N que permite executar comandos de administração de redes de computadores via WhatsApp.",
     "image": "/agent.png",
     "link": "https://github.com/nomevini/ai-agent-n8n",
