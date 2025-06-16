@@ -72,11 +72,11 @@ export default function Page() {
             </h2>
             <div className="max-w-3xl mx-auto">
               <ExperienceItem
-                title="Desenvolvedor FullStack Junior"
+                title="Desenvolvedor FullStack | IA Generativa"
                 company="BRNX Tecnologia"
                 period="nov 2024 - Presente"
-                description="Liderando o desenvolvimento de aplicações web escaláveis, implementando arquiteturas modernas. Responsável pelo desenvolvimento de sistemas internos e automação de processos internos."
-                technologies={["React", "Node.js", "TypeScript", "AWS", "PostgreSQL", "LLMs", "n8n"]}
+                description="Liderando o desenvolvimento de aplicações web escaláveis, implementando arquiteturas modernas. Responsável pelo desenvolvimento de sistemas internos e automação de processos internos com uso de IA."
+                technologies={["React", "Node.js", "TypeScript", "AWS", "PostgreSQL", "LLMs", "n8n", "Langchain", "FineTunning", "RAG"]}
               />
               <ExperienceItem
                 title="Pesquisador em IA Generativa"
@@ -98,7 +98,7 @@ export default function Page() {
 
         <section id="projects" className="py-5 md:py-15 lg:py-10">
           <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">🚀 Projetos</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">🚀 Projetos de destaque</h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <ProjectCard
                 title="Anest.AI"

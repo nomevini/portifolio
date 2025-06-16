@@ -7,6 +7,70 @@ import { notFound } from "next/navigation"
 // Sample project data - in a real app, this would come from a database or CMS
 const projects = [
   {
+    "slug": "agent",
+    "title": "AI-Agent-N8N - Agente WhatsApp para Operações de Redes",
+    "description": "Workflow no N8N que permite executar comandos de administração de redes de computadores via WhatsApp.",
+    "image": "/agent.png",
+    "link": "https://github.com/nomevini/ai-agent-n8n",
+    "tags": ["N8N", "WhatsApp API", "Automação de Redes", "SSH", "Low-code"],
+    "content": [
+      {
+        "type": "paragraph",
+        "content": "O AI-Agent-N8N é um workflow criado no N8N que permite a execução de operações em equipamentos de redes de computadores a partir de comandos recebidos via WhatsApp. A solução integra automação low-code com comunicação em tempo real, facilitando o gerenciamento remoto de dispositivos de rede."
+      },
+      {
+        "type": "heading",
+        "content": "Objetivos do Projeto"
+      },
+      {
+        "type": "paragraph",
+        "content": "O objetivo central é permitir que administradores de redes possam interagir de forma rápida e segura com seus equipamentos, enviando comandos diretamente por WhatsApp e recebendo as respostas de volta em tempo real."
+      },
+      {
+        "type": "heading",
+        "content": "Funcionalidades"
+      },
+      {
+        "type": "paragraph",
+        "content": "- Recebimento de comandos via WhatsApp.\n- Interpretação de instruções com lógica customizada no N8N.\n- Execução de tarefas em equipamentos de rede como switches, roteadores e firewalls.\n- Operações como coleta de status, execução de ping, reinicialização de interfaces e muito mais.\n- Respostas automáticas com os resultados das operações executadas."
+      },
+      {
+        "type": "heading",
+        "content": "Implementação Técnica"
+      },
+      {
+        "type": "paragraph",
+        "content": "O fluxo foi construído utilizando o N8N, com integração com uma API de WhatsApp para recebimento e envio de mensagens. A execução de comandos nos equipamentos de rede é feita através de nós de execução remota, como SSH ou chamadas API quando suportado. Também é possível a inclusão de scripts externos para operações mais avançadas."
+      },
+      {
+        "type": "paragraph",
+        "content": "Toda a lógica de decisão, mapeamento de comandos e formatação das respostas foi implementada dentro do N8N, aproveitando sua flexibilidade para criar ramificações de fluxo, manipulação de dados e integrações com serviços externos."
+      },
+      {
+        "type": "heading",
+        "content": "Desafios Técnicos"
+      },
+      {
+        "type": "paragraph",
+        "content": "Garantir segurança na execução dos comandos foi um dos maiores desafios. Para isso, o agente foi configurado para aceitar mensagens apenas de números de telefone previamente autorizados. Além disso, foram implementadas validações de entrada para evitar comandos maliciosos ou inválidos."
+      },
+      {
+        "type": "paragraph",
+        "content": "Outro desafio foi o tratamento de falhas de rede e garantir que o usuário receba feedback mesmo em caso de erros de execução ou indisponibilidade dos equipamentos."
+      },
+      {
+        "type": "heading",
+        "content": "Imagens do Projeto"
+      },
+      {
+        type: "image",
+        src: "/agent-captura.png",
+        alt: "Workflow do N8N",
+        caption: "Workflow do N8N mostrando a integração com WhatsApp e execução de comandos",
+      },
+    ]
+  },
+  {
     slug: "data-safe",
     title: "Dafa Safe - Plataforma de acesso a dados (Web Scraping)",
     description: "A full-stack e-commerce platform built with Next.js, Prisma, and Stripe integration.",
