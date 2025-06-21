@@ -124,7 +124,14 @@ export default function Page() {
                 tags={["Next.js", "Prisma", "PostgreSQL", "Selenium", "Typescript", "Express.js"]}
                 slug="data-safe"
               />
-              
+              <ProjectCard
+                title="MontionDetective - Rastreamento de pessoas em vídeos"
+                description="Software open-source que utiliza YOLOv8n para rastrear pessoas em vídeos, fornecendo métricas precisas, como contagem, tempo de permanência e velocidade das pessoas."
+                image="/montion-detective.png"
+                link=""
+                tags={["YOLOv8n", "Python", "Visão Computacional", "OpenCV"]}
+                slug="montion-detective"
+              />               
             </div>
           </div>
         </section>

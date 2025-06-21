@@ -7,6 +7,52 @@ import { notFound } from "next/navigation"
 // Sample project data - in a real app, this would come from a database or CMS
 const projects = [
   {
+    "slug": "montion-detective",
+    "title": "MontionDetective - Rastreamento de pessoas em vídeos",
+    "description": "Software open-source que utiliza YOLOv8n para rastrear pessoas em vídeos, fornecendo métricas precisas, como contagem, tempo de permanência e velocidade das pessoas.",
+    "image": "/montion-detective.png",
+    "link": "https://github.com/nomevini/montion-detective",
+    "tags": ["YOLOv8n", "Python", "Visão Computacional", "OpenCV"],
+      "content": [
+      {
+        "type": "heading",
+        "content": "🎯 O que é o MontionDetective?"
+      },
+      {
+        "type": "paragraph",
+        "content": "O MontionDetective é um projeto open-source que utiliza a tecnologia YOLOv8n para realizar rastreamento de pessoas em vídeos. Seu principal objetivo é fornecer métricas detalhadas e precisas, como a contagem de pessoas, o tempo de permanência em determinadas áreas e a velocidade de deslocamento de cada indivíduo presente no vídeo."
+      },
+      {
+        "type": "heading",
+        "content": "📊 Quais os benefícios de usar?"
+      },
+      {
+        "type": "paragraph",
+        "content": "O MontionDetective é ideal para transformar vídeos comuns em fontes ricas de informações. Com ele, é possível analisar o comportamento das pessoas presentes nas imagens, oferecendo insights valiosos para empresas, instituições de segurança ou qualquer outro setor que precise desse tipo de análise."
+      },
+      {
+        "type": "heading",
+        "content": "✅ Quais os diferenciais da ferramenta?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Entre os principais diferenciais da ferramenta está a detecção precisa de pessoas em vídeos, graças à robustez do modelo YOLOv8n. Além disso, o sistema entrega métricas avançadas, como contagem total de pessoas, tempo que cada pessoa permanece em determinada região do vídeo e até a velocidade com que elas se movimentam."
+      },
+      {
+        "type": "paragraph",
+        "content": "Outro grande destaque é a interface intuitiva e amigável, que permite que mesmo usuários com pouca experiência consigam configurar e analisar os vídeos de maneira simples e rápida. A experiência foi pensada para ser acessível, sem abrir mão da qualidade técnica."
+      },
+      {
+        "type": "heading",
+        "content": "🚀 Quais os usos práticos?"
+      },
+      {
+        "type": "paragraph",
+        "content": "A solução também traz benefícios práticos, como a melhoria na segurança, permitindo o monitoramento de atividades suspeitas em locais públicos. Outro uso importante é a identificação de padrões de comportamento, permitindo que gestores compreendam melhor o fluxo de pessoas ao longo do tempo. Para empresas, o MontionDetective ainda pode contribuir com a eficiência operacional, ajudando na identificação de gargalos e oportunidades de melhoria nos processos."
+      }
+    ]
+  },
+  {
     "slug": "agent",
     "title": "AI-Agent-N8N - Agente WhatsApp para Operações de Redes (Acesso privado)",
     "description": "Workflow no N8N que permite executar comandos de administração de redes de computadores via WhatsApp.",
