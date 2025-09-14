@@ -74,7 +74,7 @@ export default function Page() {
               <ExperienceItem
                 title="Desenvolvedor FullStack | IA Generativa"
                 company="BRNX Tecnologia"
-                period="nov 2024 - Presente"
+                period="Nov 2024 - Set 2025"
                 description="Liderando o desenvolvimento de aplicações web escaláveis, implementando arquiteturas modernas. Responsável pelo desenvolvimento de sistemas internos e automação de processos internos com uso de IA."
                 technologies={["React", "Node.js", "TypeScript", "AWS", "PostgreSQL", "LLMs", "n8n", "Langchain", "FineTunning", "RAG"]}
               />
