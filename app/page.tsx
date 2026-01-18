@@ -25,10 +25,10 @@ export default function Page() {
                   Full Stack Developer
                 </h1>
                 <h2 className="text-2xl tracking-tighter sm:text-2xl md:text-3xl lg:text-4xl/none">
-                  Desenvolvedor Full-Stack | Visão computacional | LLMs
+                  Desenvolvedor de Software
                 </h2>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                Desenvolvedor Full Stack especializado em criar aplicações web modernas, escaláveis e focadas na melhor experiência do usuário.
+                Desenvolvedor especializado em criar aplicações web modernas, escaláveis e focadas na melhor experiência do usuário.
                 </p>
               </div>
               <div className="space-x-4">
@@ -71,6 +71,13 @@ export default function Page() {
             💼 Experiência
             </h2>
             <div className="max-w-3xl mx-auto">
+              <ExperienceItem
+                title="Desenvolvedor Desktop Delphi"
+                company="Nelogica"
+                period="Set 2025 - O momento"
+                description="Atuando no time de sustentação no maior software de investimentos do Brasil, desenvolvendo novas funcionalidades e corrigindo bugs em aplicações desktop Delphi."
+                technologies={["Delphi", "Debug", "Sustentação de Software", "POO","Desenvolvimento Desktop", ]}
+              />
               <ExperienceItem
                 title="Desenvolvedor FullStack | IA Generativa"
                 company="BRNX Tecnologia"
