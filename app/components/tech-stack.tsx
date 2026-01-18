@@ -10,12 +10,12 @@ const technologies = [
     skills: ["Node.js", "Express", "Fastify", "Python", "Prisma", "PostgreSQL", "YOLO", "Retrieval-Augmented Generation (RAG)", "Hugging Face Transformers", "Langchain", "FAISS", "SentenceTransformers"],
   },
   {
-    category: "DevOps",
-    skills: ["Docker", "AWS", "CI/CD", "Git", "Linux", "Nginx"],
+    category: "Desktop",
+    skills: ["Delphi"],
   },
   {
     category: "Tools",
-    skills: ["VS Code", "Postman", "Figma", "Jest", "GitHub", "Vercel", "n8n"],
+    skills: ["Git", "Linux", "Nginx", "Docker", "VS Code", "Postman", "Figma", "Jest", "GitHub", "Vercel", "n8n"],
   },
 ]
 
