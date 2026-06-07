@@ -38,7 +38,7 @@ export default function RootLayout({
                   </Link>
                 </nav>
               </div>
-              <a className="ml-auto" href="https://drive.google.com/file/d/1-G9LlC2clUFLNV_Vk1BISZ_DSPd9ppcS/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+              <a className="ml-auto" href="https://drive.google.com/file/d/1XiTOxLvvKaSU_NcKfu3Q7y_X9RRyyMy7/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="ml-auto">
                   Resume
                 </Button>
